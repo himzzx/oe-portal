@@ -1,4 +1,4 @@
-from flask import Flask, render_template_string
+from flask import Flask
 app = Flask(__name__)
 HTML = """
  <!DOCTYPE html>
@@ -41,7 +41,7 @@ HTML = """
 
 @app.route("/")
 def home():
-    return render_template_string(HTML)
+return "<h1>Welcome to OE Portal 🚀</h1>"
 
-if __name__ == "__main__":
-    app.run(host="8.0.8.0", port=5000)
+if name == "main":
+app.run(host="0.0.0.0", port=8080)
